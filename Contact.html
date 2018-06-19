@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Contact us</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+	<section id="four" class="wrapper style3">
+				<div class="inner">
+
+					<header class="align-center">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Contact us<span></span></a></div>
+				<a href="#menu" class="toggle"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="Support.html">Support</a></li>
+					
+					<li><a href="About2.html">About</a></li>
+					<li><a href="Donate.html">Donate</a></li>
+					
+					
+					<li><a href="Contact.html">Contact us</a></li>
+				</ul>
+			</nav>
+             <section id="four" class="wrapper style3">
+				<div class="inner">
+
+					<header class="align-center">
+			
+			
+		<!-- One -->
+			<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Don't be afraid to give us a shout ! :</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Zimbabwe</option>
+          <option value="canada">South Africa</option>
+          <option value="usa">England</option>
+        </select>
+       
+        <div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+									</div>
+									<button onclick="myFunction()">Submit</button>
+
+                                     <script>
+                                     function myFunction() {
+                                                      alert("Thank you for submitting you will receive a notification on your email");
+                                                           }
+                                     </script>
+									
+								</form>
+							</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Initialize Google Maps -->
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<section>
+						<div class="box">
+							<div class="content">
+							<div class="copyright">
+						No material or images may be copied from WeCare.org without expressed written consent.</p>
+                <span class="logo_c"><p class="text-muted text-right">All Content Copyright WeCare.org&copy; 2018 All Rights Reserved.</p></spa
+					</div>
+				</div>
+			</footer>
+
+	</body>
+</html>
